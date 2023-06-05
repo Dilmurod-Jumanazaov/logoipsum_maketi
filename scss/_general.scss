@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  height: auto;
+}
+body {
+  font-family: var(--main-font-family);
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--main-body-color);
+}
+.dark-mode {
+  --main-black-title-color: #fff;
+  --main-white-text-color: #fff;
+  --main-black-text-color: #d6d6d6;
+  --main-links-color: #ff94c7;
+  --main-news-bg-color: #211f25;
+  --main-social-media-bg-color: #f4f4f4;
+  --main-task-border-color: #f7f5ff;
+  --main-opinion-bg-color: #211f25;
+  --main-body-color: #000;
+  --main-footer-bg-color: #000;
+}
+.dark-mode .hero {
+  background-image: url("/images/herobgdark.svg");
+  background-repeat: no-repeat;
+}
+.dark-mode .site-article {
+  background-image: linear-gradient(72.67deg, #1A1822 2.78%, #9040E3 173.27%), #6B50FF;
+
+}

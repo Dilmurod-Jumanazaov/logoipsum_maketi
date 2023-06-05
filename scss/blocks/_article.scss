@@ -1,0 +1,130 @@
+.site-article {
+  padding: 83px 0;
+  text-align: center;
+  background-color: #6b50ff;
+}
+.site-article__titlebox {
+  max-width: 328px;
+  width: 100%;
+}
+.site-article__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: var(--main-white-text-color);
+}
+.site-article__textwrap {
+  max-width: 338px;
+  width: 100%;
+}
+.site-article__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--main-white-text-color);
+}
+.form {
+  margin-bottom: 10px;
+}
+.form__user-name {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 12px 0 12px 28px;
+  border: 1px solid var(--main-white-text-color);
+  border-radius: 32px;
+}
+.form__btn {
+  padding: 12px 18px;
+  color: var(--main-white-text-color);
+  border: 1px solid var(--main-links-color);
+  border-radius: 32px;
+  background-color: var(--main-links-color);
+  transition: border 0.4s ease, background-color 0.4s ease;
+}
+.form__btn:hover {
+  border: 1px solid var(--main-white-text-color);
+  background-color: transparent;
+}
+.site-article__linkbox {
+  max-width: 341px;
+  width: 100%;
+}
+.site-article__desc {
+  margin: 0;
+  font-size: 10px;
+  line-height: 150%;
+  color: var(--main-white-text-color);
+}
+.site-article__link {
+  font-size: 10px;
+  line-height: 150%;
+  color: var(--main-white-text-color);
+}
+// meadia started
+@include media(375px) {
+  .site-article__titlebox {
+    max-width: 1000px;
+    width: 100%;
+  }
+  .site-article__title {
+    font-size: 38px;
+  }
+  .site-article__text {
+    font-size: 18px;
+  }
+  .site-article__textwrap {
+    max-width: 1000px;
+    width: 100%;
+  }
+  .site-article__desc {
+    font-size: 12px;
+  }
+  .site-article__linkbox {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .site-article__link {
+    font-size: 12px;
+  }
+}
+@include media(900px) {
+  .site-article {
+    padding: 112px 0;
+  }
+  .site-article__titlebox {
+    margin: 0 auto;
+  }
+  .site-article__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 120%;
+  }
+  .site-article__textwrap {
+    margin: 0 auto;
+  }
+  .site-article__text {
+    margin-bottom: 44px;
+  }
+  .form {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .form__user-name {
+    max-width: 365px;
+    width: 100%;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+  .form__btn {
+    max-width: 132px;
+    width: 100%;
+    padding: 16px 0;
+  }
+  .site-article__desc {
+    font-size: 14px;
+  }
+}

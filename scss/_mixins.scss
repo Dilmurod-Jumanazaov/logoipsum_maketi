@@ -1,0 +1,41 @@
+@mixin link ($padding-tb,$padding-rl,$color,$border-color,$bg-color) {
+  padding: $padding-tb $padding-rl;
+  line-height: 155%;
+  color: $color;
+  border: 1px solid $border-color;
+  border-radius: 38px;
+  text-decoration-line: none;
+  background-color: $bg-color;
+}
+@mixin psevdo-element ($width,$height,$margin-right) {
+  width: $width;
+  height: $height;
+  display: inline-block;
+  margin-right: $margin-right;
+  content: "";
+}
+// @mixin title ($margin-bottom,$font-weight,$font-size,$line-height,$color,$text-align) {
+//   margin-top: 0;
+//   margin-bottom: $margin-bottom;
+//   font-weight: $font-weight;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   color: $color;
+//   text-align: $text-align;
+//   letter-spacing: -0.01em;
+// }
+@mixin list-reset {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+@mixin media ($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}
+@mixin flex-box ($justify: flex-start,$align: stretch) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
