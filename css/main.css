@@ -14,6 +14,7 @@
   --main-opinion-bg-color: #fcfbff;
   --main-body-color: #fff;
   --main-footer-bg-color: #211f25;
+  --main-news-item-bg-color: #fff;
 }
 
 /* nunito-regular - latin */
@@ -87,10 +88,11 @@ body {
   --main-links-color: #ff94c7;
   --main-news-bg-color: #211f25;
   --main-social-media-bg-color: #f4f4f4;
-  --main-task-border-color: #f7f5ff;
+  --main-task-border-color: #211f25;
   --main-opinion-bg-color: #211f25;
   --main-body-color: #000;
   --main-footer-bg-color: #000;
+  --main-news-item-bg-color: #555;
 }
 
 .dark-mode .hero {
@@ -509,6 +511,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.dark-mode .task__desc {
+  color: #d6d6d6;
+}
+
 .task__linkbox {
   margin-bottom: 30px;
 }
@@ -565,6 +571,9 @@ body {
   }
   .task__text {
     margin-bottom: 0;
+  }
+  .task__item {
+    padding: 24px 24px 0 24px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -776,7 +785,7 @@ body {
   border: 1px solid var(--main-links-color);
 }
 
-.opinion__desc {
+.dark-mode .opinion__desc {
   margin-top: 30px;
   margin-bottom: 31px;
   font-size: 13px;
@@ -1347,9 +1356,23 @@ body {
 }
 
 .news__item:hover {
-  border: 1px solid var(--main-white-text-color);
-  background-color: var(--main-white-text-color);
+  border: 1px solid var(--main-news-item-bg-color);
+  background-color: var(--main-news-item-bg-color);
   box-shadow: 0px 4px 14px #cde3ef;
+}
+
+.dark-mode .news__item:hover {
+  box-shadow: none;
+}
+
+.dark-mode .news__item-link::after {
+  background-image: url("/images/vectorreddark.svg");
+  background-repeat: no-repeat;
+}
+
+.dark-mode .news__item:hover .news__item-link::after {
+  background-image: url("/images/vectorreddark.svg");
+  background-repeat: no-repeat;
 }
 
 .news__img {
@@ -1374,6 +1397,16 @@ body {
   color: var(--main-black-title-color);
   border: 1px solid var(--main-social-media-bg-color);
   background-color: var(--main-social-media-bg-color);
+}
+
+.dark-mode .news__type {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.dark-mode .news__item:hover .news__type {
+  border: 1px solid #211f25;
+  background-color: #211f25;
 }
 
 .news__time {

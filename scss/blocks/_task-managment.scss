@@ -66,6 +66,9 @@
   line-height: 155%;
   letter-spacing: 0.02em;
 }
+.dark-mode .task__desc {
+  color: #d6d6d6;
+}
 .task__linkbox {
   margin-bottom: 30px;
 }
@@ -121,6 +124,9 @@
   }
   .task__text {
     margin-bottom: 0;
+  }
+  .task__item {
+    padding: 24px 24px 0 24px;
   }
 }
 @include media(1100px) {

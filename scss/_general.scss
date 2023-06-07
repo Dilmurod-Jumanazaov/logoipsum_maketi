@@ -18,10 +18,11 @@ body {
   --main-links-color: #ff94c7;
   --main-news-bg-color: #211f25;
   --main-social-media-bg-color: #f4f4f4;
-  --main-task-border-color: #f7f5ff;
+  --main-task-border-color: #211f25;
   --main-opinion-bg-color: #211f25;
   --main-body-color: #000;
   --main-footer-bg-color: #000;
+  --main-news-item-bg-color: #555;
 }
 .dark-mode .hero {
   background-image: url("/images/herobgdark.svg");
@@ -29,5 +30,4 @@ body {
 }
 .dark-mode .site-article {
   background-image: linear-gradient(72.67deg, #1A1822 2.78%, #9040E3 173.27%), #6B50FF;
-
 }
